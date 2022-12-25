@@ -15,12 +15,24 @@ const initialFormState = {
     }
 
 }
+
+
+
 const FormUsingReducer = () => {
+
     const [formState,dispatch] = useReducer(signUpFormReducer,initialFormState) 
 
 
     return (
-
+            <>
+            <form action="" id="reducer-form">
+            
+             <input type="text" id="name"/>
+             <input type="email" id="email"/>
+             <input type="password" id="password"/>
+             <button type="submit">submit</button>
+            </form>
+            </>
     )
 }
 
